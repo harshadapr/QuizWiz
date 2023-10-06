@@ -3,7 +3,7 @@
 
 Engage in a playful and mind-bending quiz experience with **Quick Quiz**. Immerse yourself into a dynamic quizzing arena that blends together knowledge and fun with a splash of vibrant colors!
 
-[👉 Start Your Quiz Now!](#your-hosted-link)
+[👉 Start Your Quiz Now!](https://quizwiz-harshada.netlify.app/)
 
 ![Quiz Demo](demo.gif)
 

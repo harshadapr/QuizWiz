@@ -4,26 +4,43 @@
   --incorrect-color: #ef5350;
   --disabled-color: #bdbdbd;
 
-  --color-1: #f44336; /* Red */
-  --color-2: #e91e63; /* Pink */
-  --color-3: #9c27b0; /* Purple */
-  --color-4: #673ab7; /* Deep Purple */
-  --color-5: #3f51b5; /* Indigo */
-  --color-6: #2196f3; /* Blue */
-  --color-7: #00bcd4; /* Cyan */
-  --color-8: #4caf50; /* Green */
-  --color-9: #ffeb3b; /* Yellow */
-  --color-10: #ff9800; /* Orange */
+  --color-1: #f44336;
+  /* Red */
+  --color-2: #e91e63;
+  /* Pink */
+  --color-3: #9c27b0;
+  /* Purple */
+  --color-4: #673ab7;
+  /* Deep Purple */
+  --color-5: #3f51b5;
+  /* Indigo */
+  --color-6: #2196f3;
+  /* Blue */
+  --color-7: #00bcd4;
+  /* Cyan */
+  --color-8: #4caf50;
+  /* Green */
+  --color-9: #ffeb3b;
+  /* Yellow */
+  --color-10: #ff9800;
+  /* Orange */
 }
 
 body {
   display: flex;
+  flex-direction: column;
+  /* Updated to column to stack elements vertically */
   align-items: center;
   justify-content: center;
   height: 100vh;
   margin: 0;
   font-family: "Arial", sans-serif;
   background-color: #f8f8f8;
+}
+
+#start-button {
+  margin-bottom: 20px;
+  /* Add some space between the button and the rules container */
 }
 
 #quiz-container,
@@ -127,7 +144,8 @@ img {
   height: 100%;
   align-items: center;
   justify-content: center;
-  background-color: rgba(0, 0, 0, 0.8); /* semi-transparent black */
+  background-color: rgba(0, 0, 0, 0.8);
+  /* semi-transparent black */
   color: white;
   flex-direction: column;
   font-size: 24px;
@@ -174,6 +192,7 @@ img {
     transform: translateX(100%);
     opacity: 0;
   }
+
   to {
     transform: translateX(0);
     opacity: 1;
@@ -186,4 +205,102 @@ img {
 
 .slide-in-right {
   animation: slideInRight 0.5s forwards;
+}
+
+.box {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px;
+}
+
+#rules-container h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+#rules-container p,
+#rules-container ul {
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+#rules-container li {
+  margin-bottom: 5px;
+}
+
+.box,
+#rules-container {
+  display: flex;
+  /* Ensuring that the box is displayed flexibly */
+  /* Rest of the CSS properties remain the same */
+}
+
+#start-button {
+  width: 340px;
+  /* Ensuring the button has the same width as the rules container */
+  margin-bottom: 20px;
+}
+
+#app-info {
+  position: fixed;
+  top: 30px;
+  width: 340px;
+  background-color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+  display: none;
+}
+
+#app-name {
+  font-size: 24px;
+  /* Adjust the size as you prefer */
+  color: var(--main-color);
+  /* Use your theme color for the app name */
+}
+
+#tagline {
+  font-size: 14px;
+  /* Adjust as needed */
+  color: #555;
+  /* Subdued text color for the tagline */
+}
+
+#skipped-message-container {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  /* Adjusted top position so it doesn’t overlap the app-info */
+  width: 100%;
+  height: calc(100% - 60px);
+  /* Adjusted height */
+  align-items: center;
+  justify-content: center;
+  color: black;
+  position: absolute;
+  top: 80px;
+  /* Adjusted so it does not overlap with app-info */
+  width: 100%;
+  height: calc(100% - 80px);
+  /* Adjusted so it does not overlap with app-info */
+}
+
+#app-info h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+#app-info p {
+  margin: 5px 0 0 0;
+  font-size: 16px;
 }

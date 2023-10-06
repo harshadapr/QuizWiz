@@ -1,96 +1,3 @@
-// const questions = [
-//   {
-//     question: "What is 2 + 2?",
-//     answers: [
-//       { text: "4", correct: true },
-//       { text: "5", correct: false },
-//       { text: "6", correct: false },
-//       { text: "3", correct: false }
-//     ]
-//   },
-//   {
-//     question: "Which is NOT a programming language?",
-//     answers: [
-//       { text: "Python", correct: false },
-//       { text: "Java", correct: false },
-//       { text: "HTML", correct: true },
-//       { text: "C#", correct: false }
-//     ]
-//   },
-//   {
-//     question: "Who developed the theory of relativity?",
-//     answers: [
-//       { text: "Isaac Newton", correct: false },
-//       { text: "Albert Einstein", correct: true },
-//       { text: "Galileo Galilei", correct: false },
-//       { text: "Nikola Tesla", correct: false }
-//     ]
-//   },
-//   {
-//     question: "What is the capital of France?",
-//     answers: [
-//       { text: "Berlin", correct: false },
-//       { text: "Madrid", correct: false },
-//       { text: "Paris", correct: true },
-//       { text: "Lisbon", correct: false }
-//     ]
-//   },
-//   {
-//     question: "Which planet is closest to the sun?",
-//     answers: [
-//       { text: "Earth", correct: false },
-//       { text: "Mercury", correct: true },
-//       { text: "Venus", correct: false },
-//       { text: "Mars", correct: false }
-//     ]
-//   },
-//   {
-//     question: 'Which element has the chemical symbol "O"?',
-//     answers: [
-//       { text: "Osmium", correct: false },
-//       { text: "Oxygen", correct: true },
-//       { text: "Omnium", correct: false },
-//       { text: "Opium", correct: false }
-//     ]
-//   },
-//   {
-//     question: "Which country is known as the Land of the Rising Sun?",
-//     answers: [
-//       { text: "China", correct: false },
-//       { text: "Japan", correct: true },
-//       { text: "Korea", correct: false },
-//       { text: "Thailand", correct: false }
-//     ]
-//   },
-//   {
-//     question: 'Who wrote "To be or not to be"?',
-//     answers: [
-//       { text: "Charles Dickens", correct: false },
-//       { text: "Jane Austen", correct: false },
-//       { text: "William Shakespeare", correct: true },
-//       { text: "Homer", correct: false }
-//     ]
-//   },
-//   {
-//     question: "Which ocean is the largest?",
-//     answers: [
-//       { text: "Atlantic", correct: false },
-//       { text: "Indian", correct: false },
-//       { text: "Southern", correct: false },
-//       { text: "Pacific", correct: true }
-//     ]
-//   },
-//   {
-//     question: "Who painted the Mona Lisa?",
-//     answers: [
-//       { text: "Vincent Van Gogh", correct: false },
-//       { text: "Pablo Picasso", correct: false },
-//       { text: "Claude Monet", correct: false },
-//       { text: "Leonardo da Vinci", correct: true }
-//     ]
-//   }
-// ];
-
 const questions = [
   {
     question: "What is 2 + 2?",
@@ -109,8 +16,101 @@ const questions = [
       { text: "HTML", correct: true },
       { text: "C#", correct: false }
     ]
+  },
+  {
+    question: "Who developed the theory of relativity?",
+    answers: [
+      { text: "Isaac Newton", correct: false },
+      { text: "Albert Einstein", correct: true },
+      { text: "Galileo Galilei", correct: false },
+      { text: "Nikola Tesla", correct: false }
+    ]
+  },
+  {
+    question: "What is the capital of France?",
+    answers: [
+      { text: "Berlin", correct: false },
+      { text: "Madrid", correct: false },
+      { text: "Paris", correct: true },
+      { text: "Lisbon", correct: false }
+    ]
+  },
+  {
+    question: "Which planet is closest to the sun?",
+    answers: [
+      { text: "Earth", correct: false },
+      { text: "Mercury", correct: true },
+      { text: "Venus", correct: false },
+      { text: "Mars", correct: false }
+    ]
+  },
+  {
+    question: 'Which element has the chemical symbol "O"?',
+    answers: [
+      { text: "Osmium", correct: false },
+      { text: "Oxygen", correct: true },
+      { text: "Omnium", correct: false },
+      { text: "Opium", correct: false }
+    ]
+  },
+  {
+    question: "Which country is known as the Land of the Rising Sun?",
+    answers: [
+      { text: "China", correct: false },
+      { text: "Japan", correct: true },
+      { text: "Korea", correct: false },
+      { text: "Thailand", correct: false }
+    ]
+  },
+  {
+    question: 'Who wrote "To be or not to be"?',
+    answers: [
+      { text: "Charles Dickens", correct: false },
+      { text: "Jane Austen", correct: false },
+      { text: "William Shakespeare", correct: true },
+      { text: "Homer", correct: false }
+    ]
+  },
+  {
+    question: "Which ocean is the largest?",
+    answers: [
+      { text: "Atlantic", correct: false },
+      { text: "Indian", correct: false },
+      { text: "Southern", correct: false },
+      { text: "Pacific", correct: true }
+    ]
+  },
+  {
+    question: "Who painted the Mona Lisa?",
+    answers: [
+      { text: "Vincent Van Gogh", correct: false },
+      { text: "Pablo Picasso", correct: false },
+      { text: "Claude Monet", correct: false },
+      { text: "Leonardo da Vinci", correct: true }
+    ]
   }
 ];
+
+// const questions = [
+//   {
+//     question: "What is 2 + 2?",
+//     answers: [
+//       { text: "4", correct: true },
+//       { text: "5", correct: false },
+//       { text: "6", correct: false },
+//       { text: "3", correct: false }
+//     ]
+//   },
+//   {
+//     question: "Which is NOT a programming language?",
+//     answers: [
+//       { text: "Python", correct: false },
+//       { text: "Java", correct: false },
+//       { text: "HTML", correct: true },
+//       { text: "C#", correct: false }
+//     ]
+//   }
+// ];
 
 let gameActive = true;
 const questionContainer = document.getElementById("question-container");
@@ -119,6 +119,12 @@ const answerButtonsElement = document.getElementById("answer-buttons");
 const timeLeftDisplay = document.getElementById("time-left");
 const liveScoreDisplay = document.getElementById("live-score-value");
 const colorPicker = document.getElementById("color-picker");
+
+document.getElementById("start-button").addEventListener("click", startGame);
+document
+  .getElementById("restart-button")
+  .addEventListener("click", restartGame);
+document.getElementById("rules-container").style.display = "flex";
 
 let shuffledQuestions,
   currentQuestionIndex,
@@ -142,9 +148,16 @@ function resetState() {
   });
 }
 
+function restartGame() {
+  document.getElementById("restart-container").style.display = "none";
+  document.getElementById("rules-container").style.display = "none";
+  startGame();
+}
+
 document.getElementById("start-button").addEventListener("click", startGame);
 
 function startGame() {
+  document.getElementById("rules-container").style.display = "none";
   document.getElementById("start-button").style.display = "none"; // Hide the start button
   document.getElementById("quiz-container").style.display = "block";
   score = 0;

@@ -7,6 +7,20 @@
     <title>Quiz App</title>
   </head>
   <body>
+    <div id="app-info" class="box">
+      <h1 id="app-name">QuizWiz</h1>
+      <p id="tagline">The Ultimate Quiz Experience!</p>
+    </div>
+    <div id="rules-container" class="box">
+      <h2>RULES</h2>
+      <p>Here are the rules for the quiz:</p>
+      <ul>
+        <li>Answer the questions within the time limit.</li>
+        <li>Points are given for correct answers.</li>
+        <li>You can skip a question if you don’t know the answer.</li>
+        <li>Have fun!</li>
+      </ul>
+    </div>
     <button id="start-button" class="btn">Start</button>
     <div id="quiz-container">
       <div id="top-bar">
@@ -24,28 +38,9 @@
       </button>
     </div>
 
-    <div
-      id="skipped-message-container"
-      style="
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-      "
-    >
-      <div id="skipped-message">
-        Question Skipped!
-      </div>
-      <img
-        id="skipped-gif"
-        src="skip_animation.gif"
-        alt="Skipped Gif"
-        style="width: 200px; height: auto;"
-      />
+    <div id="skipped-message-container">
+      <div id="skipped-message">Question Skipped!</div>
+      <img id="skipped-gif" src="skip_animation.gif" alt="Skipped Gif" />
     </div>
 
     <div id="final-score-container" style="display: none;">
