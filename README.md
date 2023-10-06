@@ -1,7 +1,7 @@
 
-# Quick Quiz 🚀
+# Quick Wiz 🚀
 
-Engage in a playful and mind-bending quiz experience with **Quick Quiz**. Immerse yourself into a dynamic quizzing arena that blends together knowledge and fun with a splash of vibrant colors!
+Engage in a playful and mind-bending quiz experience with **Quick Wiz**. Immerse yourself into a dynamic quizzing arena that blends together knowledge and fun with a splash of vibrant colors!
 
 [👉 Start Your Quiz Now!](https://quizwiz-harshada.netlify.app/)
 
@@ -51,7 +51,8 @@ Providing a simple yet immersive UI, users can navigate through questions, pick 
 1. **Start the Quiz:** Just hit the start button and your quiz journey begins!
 2. **Pick Your Answer:** Select an answer from the provided options before the timer runs out!
 3. **Track Your Score:** Watch your score climb up with every correct answer.
-4. **Restart Anytime:** Play again with a single click, and challenge yourself with a new set of questions each time!
+4. **Color Change:** Selct your favourite color from pallete!
+5. **Restart Anytime:** Play again with a single click, and challenge yourself with a new set of questions each time!
 
 ## 🛠️ Technologies Used
 
@@ -65,10 +66,10 @@ Want to get this quiz up and running on your local machine? It's easy! Just foll
 
 ```bash
 # Clone the repository to your local machine
-git clone [https://github.com/harshadapr/QuizWiz]
+git clone https://github.com/harshadapr/QuizWiz
 
 # Navigate into the project folder
-cd [QuizWiz]
+cd QuizWiz
 
 # Open the index.html in your browser
 open index.html
@@ -76,7 +77,7 @@ open index.html
 
 ## 🤝 Contributing
 
-We welcome contributions to **Quick Quiz**!
+We welcome contributions to **Quick Wiz**!
 
 ## 💌 Contact
 
