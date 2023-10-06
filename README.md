@@ -65,10 +65,10 @@ Want to get this quiz up and running on your local machine? It's easy! Just foll
 
 ```bash
 # Clone the repository to your local machine
-git clone [your-repo-link]
+git clone [https://github.com/harshadapr/QuizWiz]
 
 # Navigate into the project folder
-cd [your-project-name]
+cd [QuizWiz]
 
 # Open the index.html in your browser
 open index.html
