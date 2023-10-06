@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <button id="start-button" class="btn">Start</button>
+    <div id="quiz-container">
+      <div id="top-bar">
+        <div id="timer">Time Left: <span id="time-left">10</span>s</div>
+        <div id="live-score">Score: <span id="live-score-value">0</span></div>
+      </div>
+      <div id="question-container">
+        <span id="question">Question text</span>
+        <br />
+        <br />
+        <div id="answer-buttons" class="btn-grid"></div>
+      </div>
+      <button id="next-button" class="btn" onclick="nextQuestion()">
+        Skip
+      </button>
+    </div>
+
+    <div
+      id="skipped-message-container"
+      style="
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div id="skipped-message">
+        Question Skipped!
+      </div>
+      <img
+        id="skipped-gif"
+        src="skip_animation.gif"
+        alt="Skipped Gif"
+        style="width: 200px; height: auto;"
+      />
+    </div>
+
+    <div id="final-score-container" style="display: none;">
+      <div id="final-score">
+        Your final score: <span id="final-score-value">0</span>
+      </div>
+      <img id="celebration-gif" src="animation.gif" alt="Celebration Gif" />
+    </div>
+    <div id="restart-container" style="display: none;">
+      <div id="restart-message">Would you like to play again?</div>
+      <button id="restart-button" class="btn">Restart</button>
+    </div>
+
+    <div id="color-picker"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
