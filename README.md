@@ -51,7 +51,7 @@ Providing a simple yet immersive UI, users can navigate through questions, pick 
 1. **Start the Quiz:** Just hit the start button and your quiz journey begins!
 2. **Pick Your Answer:** Select an answer from the provided options before the timer runs out!
 3. **Track Your Score:** Watch your score climb up with every correct answer.
-4. **Color Change:** Selct your favourite color from pallete!
+4. **Color Change:** Select your favourite color from pallete!
 5. **Restart Anytime:** Play again with a single click, and challenge yourself with a new set of questions each time!
 
 ## 🛠️ Technologies Used
